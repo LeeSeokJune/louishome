@@ -125,7 +125,7 @@ class mainUpper extends StatelessWidget {
               ),
               Text(
                 '카테고리',
-                style: TextStyle(),
+                style: TextStyle(fontSize: 15),
               ),
             ],
           ),
@@ -144,7 +144,10 @@ class mainUpper extends StatelessWidget {
           width: 100,
           height: 40,
           child: Center(
-            child: Text('브랜드샵'),
+            child: Text(
+              '브랜드샵',
+              style: TextStyle(fontSize: 15),
+            ),
           ),
         ),
         Container(
@@ -161,7 +164,7 @@ class mainUpper extends StatelessWidget {
       children: [
         for (var i = 0; i < midRightData.length; i++)
           Text(
-            midRightData[i] + '    ',
+            midRightData[i] + '      ',
             style: TextStyle(
               fontSize: 15,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:louishomeweb_1/data/style.dart';
+import 'package:louishomeweb_1/screens/main_middle.dart';
 import 'package:louishomeweb_1/screens/main_upper.dart';
 import 'package:get/get.dart';
 
@@ -21,10 +22,11 @@ class MainScreen extends StatelessWidget {
         child: Center(
           child: Container(
             width: 1200,
-            height: context.height * 3,
+            height: context.height * 10,
             child: Column(
               children: [
                 mainUpper(),
+                mainMiddleScreen(),
               ],
             ),
           ),

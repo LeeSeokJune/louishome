@@ -60,6 +60,7 @@ class mainUpper extends StatelessWidget {
         upperMid(),
         SizedBox(height: 10),
         upperBottom(),
+        SizedBox(height: 100),
       ],
     );
   }

@@ -4,11 +4,11 @@ import 'package:louishomeweb_1/data/style.dart';
 
 class mainMiddleScreen extends StatelessWidget {
   var backColors = [
-    Colors.red,
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.blue,
+    colors[0],
+    colors[0],
+    colors[0],
+    colors[0],
+    colors[0],
   ];
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class mainMiddleScreen extends StatelessWidget {
                       children: <Widget>[
                         SizedBox(
                           child: Container(
-                            color: backColors[i],
+                            color: colors[1],
                           ),
                           height: 250,
                           width: 250,
@@ -84,7 +84,7 @@ class mainMiddleScreen extends StatelessWidget {
         Container(
           width: 500,
           height: 250,
-          color: Colors.green,
+          color: Colors.grey,
         ),
         SizedBox(
           width: 20,
@@ -102,7 +102,7 @@ class mainMiddleScreen extends StatelessWidget {
     return Container(
       width: 1100,
       height: 300,
-      color: Colors.blue,
+      color: colors[1],
     );
   }
 

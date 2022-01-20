@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:louishomeweb_1/data/style.dart';
 
 class mainMiddleScreen extends StatelessWidget {
@@ -44,25 +45,29 @@ class mainMiddleScreen extends StatelessWidget {
               return Wrap(
                 runSpacing: 6.0,
                 children: [0, 1, 2, 3].map((i) {
-                  return SizedBox(
-                    width: 300,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        SizedBox(
-                          child: Container(
-                            color: colors[1],
-                          ),
-                          height: 250,
-                          width: 250,
+                  return InkWell(
+                      child: SizedBox(
+                        width: 300,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            SizedBox(
+                              child: Container(
+                                color: colors[1],
+                              ),
+                              height: 250,
+                              width: 250,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 6.0),
+                              child: Text("$i"),
+                            )
+                          ],
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 6.0),
-                          child: Text("$i"),
-                        )
-                      ],
-                    ),
-                  );
+                      ),
+                      onTap: () {
+                        Get.toNamed('/item');
+                      });
                 }).toList(),
               );
             },

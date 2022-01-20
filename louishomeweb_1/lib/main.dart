@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:louishomeweb_1/data/style.dart';
+import 'package:louishomeweb_1/screens/itemscreen/item_screen.dart';
 import 'package:louishomeweb_1/screens/loginscreen/login_screen.dart';
 import 'package:louishomeweb_1/screens/mainscreen/main_screen.dart';
 import 'package:louishomeweb_1/screens/registerscreen/register_screen.dart';
@@ -29,6 +30,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/register',
           page: () => RegisterScreen(),
+        ),
+        GetPage(
+          name: '/item',
+          page: () => ItemScreen(),
         ),
       ],
       home: MainScreen(),
